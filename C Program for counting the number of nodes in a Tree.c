@@ -25,12 +25,8 @@ int countnodes(struct node *root)
     }
     return count;
 }
-/*
- * Main Function
- */
 int main()
 {
-    /* Creating first Tree. */
     struct node *newnode = createnode(25);
     newnode->left = createnode(27);
     newnode->right = createnode(19);
@@ -48,8 +44,6 @@ int main()
     printf("Number of nodes in tree 1 = %d ",countnodes(newnode));
     printf("\n");
     count = 0;
-
-    /* Creating second Tree. */
     struct node *node = createnode(1);
     node->right = createnode(2);
     node->right->right = createnode(3);
@@ -69,8 +63,6 @@ int main()
     printf("Number of nodes in tree 2 = %d ",countnodes(node));
     printf("\n");
     count = 0;
-
-    /* Creating third Tree. */
     struct node *root = createnode(15);
     /* Sample Tree 3- Tree having just one root node.
      * 15

@@ -25,12 +25,9 @@ int sumofnodes(struct node *root)
         return sum;
     }
 }
-/*
-* Main Function
-*/
+
 int main()
 {
-   /* Creating first Tree. */
     struct node *newnode = createnode(25);
     newnode->left = createnode(27);
     newnode->right = createnode(19);
@@ -47,8 +44,6 @@ int main()
      */
     printf("Sum of nodes in tree 1 = %d", sumofnodes(newnode));
     printf("\n");
-
-    /* Creating second Tree. */
     struct node *node = createnode(1);
     node->right = createnode(2);
     node->right->right = createnode(3);
@@ -67,8 +62,6 @@ int main()
      */
     printf("Sum of nodes in tree 2 = %d", sumofnodes(node));
     printf("\n");
-
-    /* Creating third Tree. */
     struct node *root = createnode(15);
     /* Sample Tree 3: Tree having just one root node.
      *              15
